@@ -1,0 +1,24 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <math.h> 
+#include <stdio.h>
+#include <math.h>  
+
+int main() {
+    float value;
+
+
+   scanf("%f", &value);
+    printf("%f\n", value);         
+    printf("%.4f\n", value);       
+    printf("%.2f\n", value);      
+    printf("%.0f\n", round(value));
+
+    return 0;
+}
