@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    unsigned long long factorial = 1;
+
+    // Read input
+    scanf("%d", &n);
+
+    // Validate input
+    if(n < 0) {
+        printf("Invalid Input\n");
+    } else {
+        for(i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        printf("The Factorial of %d is %llu\n", n, factorial);
+    }
+
+    return 0;
+}
+
