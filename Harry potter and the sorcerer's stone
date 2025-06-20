@@ -1,0 +1,22 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <stdio.h>
+
+int main() {
+    int num, first, last, result;
+    scanf("%d", &num);
+    last = num % 10;
+    first = num;
+    while (first >= 10) {
+        first /= 10;
+    }
+    result = first + last;
+    printf("%d\n", result);
+
+    return 0;
+}
