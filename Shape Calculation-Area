@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+#define PI 3.1416
+
+#include <stdio.h>
+#define PI 3.141592653589793
+
+int main() {
+    int l, b, r, a, base, height;
+    double A1, A2, A3, A4;
+
+    scanf("%d", &a);
+    scanf("%d", &l);
+    scanf("%d", &b);
+    scanf("%d", &r);
+    scanf("%d", &base);
+    scanf("%d", &height);
+
+    A1 = (double)(a * a);
+    A2 = (double)(l * b);
+    A3 = PI * r * r;
+    A3 = (int)(A3 * 100) / 100.0;  
+    A4 = 0.5 * base * height;
+
+    printf("Area of Square=%.0f\n", A1);
+    printf("Area of Rectangle=%.0f\n", A2);
+    printf("Area of Circle=%.2f\n", A3);
+    printf("Area of Triangle=%.0f\n", A4);
+
+    return 0;
+}
