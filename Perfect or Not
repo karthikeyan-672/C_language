@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int num, i, sum = 0;
+
+    // Read input
+    scanf("%d", &num);
+
+    // Validate input
+    if(num < 0) {
+        printf("Invalid Input\n");
+    } else {
+        for(i = 1; i < num; i++) {
+            if(num % i == 0) {
+                sum += i;
+            }
+        }
+
+        if(sum == num)
+            printf("The Number %.1f is a Perfect Number.\n", (float)num);
+        else
+            printf("The Number %.1f is a Not Perfect Number.\n", (float)num);
+    }
+
+    return 0;
+}
+
