@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int num, i, sum = 0;
+
+    // Read the number
+    scanf("%d", &num);
+
+    // Calculate sum of proper divisors
+    for(i = 1; i <= num/2; i++) {
+        if(num % i == 0) {
+            sum += i;
+        }
+    }
+
+    // Check if sum of divisors is greater than the number
+    if(sum > num)
+        printf("Abundant Number\n");
+    else
+        printf("Not Abundant Number\n");
+
+    return 0;
+}
