@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    char name[100];
+    fgets(name, sizeof(name), stdin);
+    if (name[strlen(name) - 1] == '\n') {
+        name[strlen(name) - 1] = '\0';
+    }
+
+    printf("Hai %s! Welcome to Programming Language...\n", name);
+
+    return 0;
+}
